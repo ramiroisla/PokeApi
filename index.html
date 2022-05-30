@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js" type="text/javascript" defer></script>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <form onsubmit="searchPokemon(event)">
+        <h1>Pokedex</h1>
+        <input type="text" name="pokemon" id="pokemon-id" />
+        <button class="nav-button">
+          <img src="./pokeball.png" class="img-nav" />
+        </button>
+      </form>
+    </nav>
+    <main>
+      <img src="./pokemon_logo.png" class="pokemon-logo" >
+      <div data-poke-card class="poke-card" id="position">
+        <div data-poke-name class="data-poke-name">¿Que pokemon quieres buscar?</div>
+        <div data-poke-img-container class="img-container">
+          <img data-poke-img class="poke-img" src="./pokedex.png"/>
+        </div>
+        <div data-poke-id></div>
+        <div data-poke-types class="poke-types"></div>
+        <div data-poke-stats class="poke-stats"></div>
+      </div>
+      <img src="./Pokemon.png" class="pokemon" >
+    </main>
+  </body>
+</html>
